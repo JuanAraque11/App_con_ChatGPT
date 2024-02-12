@@ -44,6 +44,8 @@ valor_a_convertir = st.number_input("Ingrese el valor a convertir")
 
 # Realizar la conversión
 if st.button("Convertir"):
+
+    # Temperatura
     if conversion_seleccionada == "Celsius a Fahrenheit":
         resultado = (valor_a_convertir * 9/5) + 32
     elif conversion_seleccionada == "Fahrenheit a Celsius":
@@ -52,6 +54,16 @@ if st.button("Convertir"):
         resultado = valor_a_convertir + 273.15
     elif conversion_seleccionada == "Kelvin a Celsius":
         resultado = valor_a_convertir - 273.15
-    # Agregar más conversiones aquí según sea necesario...
+    
+    # Longitud
+    elif conversion_seleccionada == "Pies a metros":
+        resultado = valor_a_convertir * 0.3048
+    elif conversion_seleccionada == "Metros a pies":
+        resultado = valor_a_convertir / 0.3048
+    elif conversion_seleccionada == "Pulgadas a centímetros":
+        resultado = valor_a_convertir * 2.54
+    elif conversion_seleccionada == "Centímetros a pulgadas":
+        resultado = valor_a_convertir / 2.54
+
     
     st.write(f"El resultado de la conversión es: {resultado}")
