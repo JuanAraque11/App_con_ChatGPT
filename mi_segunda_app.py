@@ -67,13 +67,13 @@ if st.button("Convertir"):
 
     # Peso/masa
     elif conversion_seleccionada == "Libras a kilogramos":
-    resultado = valor_a_convertir * 0.453592
+        resultado = valor_a_convertir * 0.453592
     elif conversion_seleccionada == "Kilogramos a libras":
-    resultado = valor_a_convertir / 0.453592
+        resultado = valor_a_convertir / 0.453592
     elif conversion_seleccionada == "Onzas a gramos":
-    resultado = valor_a_convertir * 28.3495
+        resultado = valor_a_convertir * 28.3495
     elif conversion_seleccionada == "Gramos a onzas":
-    resultado = valor_a_convertir / 28.3495
+        resultado = valor_a_convertir / 28.3495
 
     
     st.write(f"El resultado de la conversión es: {resultado}")
