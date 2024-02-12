@@ -95,5 +95,58 @@ if st.button("Convertir"):
     elif conversion_seleccionada == "Semanas a días":
         resultado = valor_a_convertir * 7
 
-    
+    # Velocidad
+    elif conversion_seleccionada == "Millas por hora a kilómetros por hora":
+        resultado = valor_a_convertir * 1.60934
+    elif conversion_seleccionada == "Kilómetros por hora a metros por segundo":
+        resultado = valor_a_convertir * 0.277778
+    elif conversion_seleccionada == "Nudos a millas por hora":
+        resultado = valor_a_convertir * 1.15078
+    elif conversion_seleccionada == "Metros por segundo a pies por segundo":
+        resultado = valor_a_convertir * 3.28084
+
+    # Area
+    elif conversion_seleccionada == "Metros cuadrados a pies cuadrados":
+        resultado = valor_a_convertir * 10.7639
+    elif conversion_seleccionada == "Pies cuadrados a metros cuadrados":
+        resultado = valor_a_convertir / 10.7639
+    elif conversion_seleccionada == "Kilómetros cuadrados a millas cuadradas":
+        resultado = valor_a_convertir * 0.386102
+    elif conversion_seleccionada == "Millas cuadradas a kilómetros cuadrados":
+        resultado = valor_a_convertir / 0.386102
+
+    # Energia
+    elif conversion_seleccionada == "Julios a calorías":
+        resultado = valor_a_convertir * 0.239006
+    elif conversion_seleccionada == "Calorías a kilojulios":
+        resultado = valor_a_convertir * 0.001
+    elif conversion_seleccionada == "Kilovatios-hora a megajulios":
+        resultado = valor_a_convertir * 3.6
+    elif conversion_seleccionada == "Megajulios a kilovatios-hora":
+        resultado = valor_a_convertir / 3.6
+
+    # Presion
+    elif conversion_seleccionada == "Pascales a atmósferas":
+        resultado = valor_a_convertir * 0.00000986923
+    elif conversion_seleccionada == "Atmósferas a pascales":
+        resultado = valor_a_convertir / 0.00000986923
+    elif conversion_seleccionada == "Barras a libras por pulgada cuadrada":
+        resultado = valor_a_convertir * 14.5038
+    elif conversion_seleccionada == "Libras por pulgada cuadrada a bares":
+        resultado = valor_a_convertir / 14.5038
+
+    # Tamaño de datos
+    elif conversion_seleccionada == "Megabytes a gigabytes":
+        resultado = valor_a_convertir * 0.001
+    elif conversion_seleccionada == "Gigabytes a terabytes":
+        resultado = valor_a_convertir * 0.001
+    elif conversion_seleccionada == "Kilobytes a megabytes":
+        resultado = valor_a_convertir * 0.001
+    elif conversion_seleccionada == "Terabytes a petabytes":
+        resultado = valor_a_convertir * 0.001
+
+    # Ninguno
+    else:
+        resultado = "Conversión no disponible"
+
     st.write(f"El resultado de la conversión es: {resultado}")
