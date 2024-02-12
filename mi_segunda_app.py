@@ -85,5 +85,15 @@ if st.button("Convertir"):
     elif conversion_seleccionada == "Centímetros cúbicos a pulgadas cúbicas":
         resultado = valor_a_convertir / 16.3871
 
+    # Tiempo
+    elif conversion_seleccionada == "Horas a minutos":
+        resultado = valor_a_convertir * 60
+    elif conversion_seleccionada == "Minutos a segundos":
+        resultado = valor_a_convertir * 60
+    elif conversion_seleccionada == "Días a horas":
+        resultado = valor_a_convertir * 24
+    elif conversion_seleccionada == "Semanas a días":
+        resultado = valor_a_convertir * 7
+
     
     st.write(f"El resultado de la conversión es: {resultado}")
