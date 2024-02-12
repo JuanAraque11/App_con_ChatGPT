@@ -75,5 +75,15 @@ if st.button("Convertir"):
     elif conversion_seleccionada == "Gramos a onzas":
         resultado = valor_a_convertir / 28.3495
 
+    # Volumen
+    elif conversion_seleccionada == "Galones a litros":
+        resultado = valor_a_convertir * 3.78541
+    elif conversion_seleccionada == "Litros a galones":
+        resultado = valor_a_convertir / 3.78541
+    elif conversion_seleccionada == "Pulgadas cúbicas a centímetros cúbicos":
+        resultado = valor_a_convertir * 16.3871
+    elif conversion_seleccionada == "Centímetros cúbicos a pulgadas cúbicas":
+        resultado = valor_a_convertir / 16.3871
+
     
     st.write(f"El resultado de la conversión es: {resultado}")
